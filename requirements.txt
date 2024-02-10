@@ -1,0 +1,13 @@
+findspark
+pyspark
+fastapi
+pydantic
+joblib
+pytest
+pytest-cov
+black
+pylint
+mypy
+uvicorn[standard]
+boto3
+httpx
