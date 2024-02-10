@@ -32,5 +32,5 @@ jobs:
         with:
           spark-version: '3.4.1'
           hadoop-version: '3'
-      - name: Test spark
-        run: spark-submit --version
+      - name: Test main py
+        run: python3 tests/test.py
