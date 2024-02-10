@@ -33,4 +33,4 @@ jobs:
           spark-version: '3.4.1'
           hadoop-version: '3'
       - name: Test main py
-        run: python3 tests/test.py
+        run: python3 test.py
