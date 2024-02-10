@@ -11,3 +11,4 @@ mypy
 uvicorn[standard]
 boto3
 httpx
+numpy
