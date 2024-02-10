@@ -24,3 +24,13 @@ jobs:
       - name: Lint with mypy
         run: |
           mypy .
+      - uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: temurin
+      - uses: vemonet/setup-spark@v1
+        with:
+          spark-version: '3.4.1'
+          hadoop-version: '3'
+      - name: Test spark
+        run: spark-submit --version
