@@ -30,7 +30,8 @@ app = FastAPI()
 def hello():
 
     spark = SparkSession.builder.appName("SparkMLPredict").getOrCreate()
-    model = PipelineModel.load("s3a://fraudstop/artifacts/tree_md7/sparkml")
+#    model = PipelineModel.load("s3a://fraudstop/artifacts/tree_md7/sparkml")
+    model = PipelineModel.load("./models/tree/sparkml")
     struct = StructType(
         [
             StructField("transaction_id", IntegerType(), nullable=True),

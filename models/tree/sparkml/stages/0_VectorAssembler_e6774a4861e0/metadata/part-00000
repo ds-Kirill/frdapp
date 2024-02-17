@@ -1,0 +1,1 @@
+{"class":"org.apache.spark.ml.feature.VectorAssembler","timestamp":1706134335923,"sparkVersion":"3.0.3","uid":"VectorAssembler_e6774a4861e0","paramMap":{"inputCols":["transaction_id","tx_time","customer_id","terminal_id","tx_amount"],"outputCol":"features"},"defaultParamMap":{"handleInvalid":"error","outputCol":"VectorAssembler_e6774a4861e0__output"}}
