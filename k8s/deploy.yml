@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-antifrd-app-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: my-antifrd-app
+  template:
+    metadata:
+      labels:
+        app: my-antifrd-app
+    spec:
+      containers:
+      - name: my-antifrd-app
+        image: dskirill/otusfrd:latest
+        ports:
+        - containerPort: 8000
